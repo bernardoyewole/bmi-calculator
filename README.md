@@ -38,7 +38,7 @@ onEvent('click', calculate, () => {
 ```
 Now, let us check what each part of the code is doing.
 
-```onEvent()``` is an utlity function that works exactly like ```document.querySelector()```
+```onEvent()``` is an utility function that works exactly like ```document.querySelector()```
 
 ```heightFeet.value``` is the input of the user in the ```height (feet)``` field; ```heightInches.value``` is the input of the user in the ```height (inch)``` field; ```weight.value``` is the input of the user in the ```weight``` field.
 
