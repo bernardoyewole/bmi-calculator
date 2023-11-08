@@ -5,15 +5,18 @@ In this tutorial, you will see how JavaScript can access user inputs and manipul
 
 ### Built With
 <p align="center">
-  <li><img src="https://img.shields.io/badge/code-javascript-informational?style=for-the-badge&logo=javascript&logoColor=white&color=2aa889"/></li>
-  <li><img src="https://img.shields.io/badge/web-html-informational?style=for-the-badge&logo=html5&logoColor=white&color=2aa889"/></li>
-  <li><img src="https://img.shields.io/badge/web-css-informational?style=for-the-badge&logo=css3&logoColor=white&color=2aa889"/></li>
+  <img src="https://img.shields.io/badge/code-javascript-informational?style=for-the-badge&logo=javascript&logoColor=white&color=2aa889"/>&nbsp;
+  <img src="https://img.shields.io/badge/web-html-informational?style=for-the-badge&logo=html5&logoColor=white&color=2aa889")/>&nbsp;
+  <img src="https://img.shields.io/badge/web-css-informational?style=for-the-badge&logo=css3&logoColor=white&color=2aa889")/>&nbsp;
 </p>
 
-## Getting Started
+## Demo
 Click [here](https://bernardoyewole.github.io/bmi-calculator/) to open the calculator
 
-## Usage
+A demo is shown below:
+![demo](./assets/img/demo.png)
+
+## Getting Started
 Once the page loads, there are three input fields: ```height (feet)```, ```height (inches)``` and ```weight```. The user enters their height and weight into these fields and clicks on the ```Calculate``` button.
 
 The ```Calculate``` button listens for a ```click``` event and runs some instructions. Check the code below:
@@ -62,8 +65,6 @@ function getBmi(heightnum, weightnum) {
 }
 ```
 
-```result``` is a class referring to the output field shwon below. So, the resulting value of BMI is shown in this field.
+```result``` is a class referring to the output field shown below. So, the resulting value of BMI is shown in this field.
 
 ![output field](./assets/img/output-field.png)
-
-
