@@ -38,3 +38,86 @@ main {
     margin-inline: auto;
     height: 100%;
 }
+
+.bmi-calc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.flex {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+
+h1 {
+    padding-bottom: 60px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.heading p {
+    padding: 0px 40px 60px 40px;
+    font-size: 18px;
+}
+
+h1, h2, p, label {
+    color: #f6f6ff;
+}
+
+label {
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+input {
+    padding: 10px 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+}
+
+form :nth-child(3) {
+    margin-top: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.result {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+    padding: 20px 20px;
+    font-size: 18px;
+}
+
+.result span {
+    height: 50px;
+}
+
+.calculate {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.info {
+    padding-top: 20px;
+}
+
+.info p {
+    font-size: 18px;
+}
+
+.info h2 {
+    font-size: 30px;
+    padding-bottom: 10px;
+}
