@@ -25,12 +25,12 @@ function getBmi(heightnum, weightnum) {
     return bmi;
 }
 
-function isValid(...arg) {
+function isValid(arg) {
     if (arg !== '' && !isNaN(Number.parseFloat(arg))) {
         return true;
     }
     else {
-        result.innerText = "Please, enter a valid height and weight";
+        result.innerText = "Enter a valid height and weight";
     }
 }
 
@@ -38,7 +38,7 @@ onEvent('click', calculate, () => {
     let heightNum = Number.parseFloat(height.value);
     let weightNum = Number.parseFloat(weight.value);
 
-    if (isValid(heightNum, weightNum)) {
+    if (isValid(heightNum) && isValid(weightNum)) {
         let bmi = getBmi(heightNum, weightNum);
         result.innerText = `${bmi.toFixed(1)}`;
     }
