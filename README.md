@@ -14,6 +14,7 @@ In this tutorial, you will see how JavaScript can access user inputs and manipul
 Click [here](https://bernardoyewole.github.io/bmi-calculator/) to open the calculator
 
 A demo is shown below:
+
 ![demo](./assets/img/demo.png)
 
 ## Getting Started
