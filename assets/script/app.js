@@ -39,12 +39,12 @@ function isValid(arg) {
 }
 
 onEvent('click', calculate, () => {
-    let heightNum = (Number.parseFloat(heightFeet.value) * 12) + Number.parseFloat(heightInches.value);
+    let heightNum = (Number.parseFloat(heightFeet.value) * 12) 
+    + Number.parseFloat(heightInches.value);
     let weightNum = Number.parseFloat(weight.value);
 
     if (isValid(heightNum) && isValid(weightNum)) {
         result.innerText = `${getBmi(heightNum, weightNum).toFixed(1)}`;
-        console.log(heightNum, weightNum, getBmi(heightNum, weightNum))
     }
 });
 
