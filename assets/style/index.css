@@ -68,9 +68,9 @@ h1, h2, p, label {
     color: #f6f6ff;
 }
 
-label {
+form :nth-child(2) {
     text-align: center;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
 }
 
 input {
@@ -80,14 +80,23 @@ input {
     font-size: 20px;
 }
 
-form :nth-child(3) {
-    margin-top: 20px;
-}
-
 form {
     display: flex;
     flex-direction: column;
     width: 350px;
+}
+
+.height-container {
+    display: flex;
+    gap: 10px;
+}
+
+.height-feet {
+    margin-right: 20px;
+}
+
+.height-container {
+    padding-bottom: 20px;
 }
 
 .result {

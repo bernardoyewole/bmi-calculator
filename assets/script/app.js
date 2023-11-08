@@ -9,14 +9,18 @@ function select(selector, parent = document) {
 }
 
 // Main 
-const height = select('.height');
+const heightFeet = select('.height-feet');
+const heightInches = select('.height-inches');
 const weight = select('.weight');
 const result = select('.result span');
 const calculate = select('.calculate');
 const response = select('.result');
 
+console.log(heightFeet.value, heightInches.value);
+
 onEvent('load', window, () => {
-    height.value = '';
+    heightFeet.value = '';
+    heightInches.value = '';
     weight.value = '';
 });
 
@@ -35,12 +39,12 @@ function isValid(arg) {
 }
 
 onEvent('click', calculate, () => {
-    let heightNum = Number.parseFloat(height.value);
+    let heightNum = (Number.parseFloat(heightFeet.value) * 12) + Number.parseFloat(heightInches.value);
     let weightNum = Number.parseFloat(weight.value);
 
     if (isValid(heightNum) && isValid(weightNum)) {
-        let bmi = getBmi(heightNum, weightNum);
-        result.innerText = `${bmi.toFixed(1)}`;
+        result.innerText = `${getBmi(heightNum, weightNum).toFixed(1)}`;
+        console.log(heightNum, weightNum, getBmi(heightNum, weightNum))
     }
 });
 
