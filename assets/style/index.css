@@ -49,6 +49,7 @@ main {
 
 .flex {
     display: flex;
+    flex-wrap: nowrap;
     gap: 100px;
     align-items: center;
 }
@@ -130,4 +131,19 @@ form {
 .info h2 {
     font-size: 30px;
     padding-bottom: 10px;
+}
+
+@media only screen and (max-width: 664px) {
+    .flex {
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    h1 {
+        padding-bottom: 20px;
+    }
+
+    
+
 }
