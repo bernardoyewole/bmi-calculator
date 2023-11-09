@@ -61,7 +61,7 @@ h1 {
 }
 
 .heading p {
-    padding: 0px 40px 60px 40px;
+    /* padding: 0px 40px 60px 40px; */
     font-size: 18px;
 }
 
@@ -142,8 +142,11 @@ form {
 
     h1 {
         padding-bottom: 20px;
+        font-size: 30px;
     }
 
-    
-
+    .heading p {
+        padding-bottom: 30px;
+        /* text-align: center; */
+    }
 }
